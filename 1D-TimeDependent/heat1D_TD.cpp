@@ -24,7 +24,7 @@ int main(int argc, char* argv[]){
     double* oldSolution = new double[nx + 2];   // Solution of the linear system at the previous time step
     double* exactSolution = new double[nx + 2]; // Exact solution of the linear system at time = 1.0
 
-    // Init rhs of the linear system and its exact solution
+    // Init oldSolution and exactSolution
     for (int i = 0; i < nx + 2; i++){
         oldSolution[i] = 0.0;
         exactSolution[i] = std::sin(i * dx) * std::sin(1.0); 
