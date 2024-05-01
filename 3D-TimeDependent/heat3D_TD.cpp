@@ -137,7 +137,7 @@ int main(int argc, char* argv[]){
 
         std::cout << "===============================================================" << std::endl;
         std::cout << "Time to build the matrix: " << timeBuildMatrix.count() * 1000 << " milliseconds " << std::endl;
-        std::cout << "Time to solve the problem: " << timeSolve.count() / (nt * N) << " seconds / (nt * N) " << std::endl;
+        std::cout << "Time to solve the problem: " << timeSolve.count() << " seconds " << std::endl;
         std::cout << "Error with " << N << " points: " << error << std::endl;
     }
 
